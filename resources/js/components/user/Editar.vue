@@ -82,7 +82,7 @@ export default {
          async mostrarUser(){
            await this.axios.get(`/api/user/${this.$route.params.id}`)
             .then(response=>{
-                 const {titulo, cuerpo}=response.data
+                 const {nombre, apellidos,sexo, edad,email}=response.data
                     this.user.nombre=nombre,
                     this.user.apellidos=apellidos,
                     this.user.sexo=sexo,
