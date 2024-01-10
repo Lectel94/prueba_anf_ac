@@ -87,7 +87,7 @@ export default {
                     this.user.apellidos=apellidos,
                     this.user.sexo=sexo,
                     this.user.edad=edad,
-                    this.user.email=email,
+                    this.user.email=email
             })
             .catch(error=>{
                 this.user=[]
