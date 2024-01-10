@@ -120,8 +120,7 @@ class UserController extends Controller
     {
         $user=User::find($id);
         $user=User::find($id)->delete();
-
-
+        
         return response()->json($user);
     }
 }
