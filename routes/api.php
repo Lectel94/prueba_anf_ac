@@ -19,14 +19,5 @@ use Laravel\Passport\Http\Controllers\AccessTokenController;
 
 
 
-Route::group([
-    'prefix' => 'auth'
-], function () {
-    
-  
-    Route::group([
-      'middleware' => 'auth:api'
-    ], function() {
-        Route::resource('user', UserController::class);
-    });
-});
+        Route::resource('user', UserController::class)->middleware('client');
+        
